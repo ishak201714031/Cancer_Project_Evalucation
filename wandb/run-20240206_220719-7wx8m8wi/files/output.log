@@ -1,0 +1,1846 @@
+exporting to initialized_models/basic_cnn/big_data/labels_subsite_train/0
+initialized_models/basic_cnn/big_data/labels_subsite_train/0 data dir identified but will be re-populated
+valid pre-processed data found in cv_data/big_data/labels_subsite_train/0
+Initializing embedding layer with word2vec weights, shape (2871, 300)
+cnn settings:
+Namespace(init_full_cvs=True, model_name='basic_cnn', data_name='big_data', label_name='labels_subsite_train', this_fold='0', rand_seed=3545, seq_len=1500, l2_rate=0.01, emb_dropout=1.0, filter_sizes=[3, 4, 5], num_filters=100, clf_hidden_dims=100, clf_dropout_prob=0.5)
+Epoch 1/50
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 7.0170 - acc: 0.2327
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/engine/training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+Epoch 1: val_loss improved from inf to 6.46786, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 7.0170 - acc: 0.2327 - val_loss: 6.4679 - val_acc: 0.3356
+Epoch 2/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 6.1570 - acc: 0.4631
+Epoch 2: val_loss improved from 6.46786 to 5.89569, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 6.1570 - acc: 0.4631 - val_loss: 5.8957 - val_acc: 0.5137
+Epoch 3/50
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 5.5479 - acc: 0.5459
+Epoch 3: val_loss improved from 5.89569 to 5.35949, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 5.5479 - acc: 0.5459 - val_loss: 5.3595 - val_acc: 0.6027
+Epoch 4/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 4.9818 - acc: 0.6398
+Epoch 4: val_loss improved from 5.35949 to 4.90697, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 4.9818 - acc: 0.6398 - val_loss: 4.9070 - val_acc: 0.6507
+Epoch 5/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 4.5050 - acc: 0.6868
+Epoch 5: val_loss improved from 4.90697 to 4.51000, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 4.5050 - acc: 0.6868 - val_loss: 4.5100 - val_acc: 0.6644
+Epoch 6/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 4.1329 - acc: 0.7069
+Epoch 6: val_loss improved from 4.51000 to 4.17283, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 4.1329 - acc: 0.7069 - val_loss: 4.1728 - val_acc: 0.6781
+Epoch 7/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 3.7801 - acc: 0.7606
+Epoch 7: val_loss improved from 4.17283 to 3.89295, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 13s 2s/step - loss: 3.7801 - acc: 0.7606 - val_loss: 3.8930 - val_acc: 0.6918
+Epoch 8/50
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 3.4785 - acc: 0.7718
+Epoch 8: val_loss improved from 3.89295 to 3.65831, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 3.4785 - acc: 0.7718 - val_loss: 3.6583 - val_acc: 0.6918
+Epoch 9/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 3.2816 - acc: 0.7718
+Epoch 9: val_loss improved from 3.65831 to 3.45687, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 3.2816 - acc: 0.7718 - val_loss: 3.4569 - val_acc: 0.6781
+Epoch 10/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 3.0670 - acc: 0.7808
+Epoch 10: val_loss improved from 3.45687 to 3.28019, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 3.0670 - acc: 0.7808 - val_loss: 3.2802 - val_acc: 0.6781
+Epoch 11/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.8428 - acc: 0.7897
+Epoch 11: val_loss improved from 3.28019 to 3.12851, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 2.8428 - acc: 0.7897 - val_loss: 3.1285 - val_acc: 0.6712
+Epoch 12/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.7009 - acc: 0.7875
+Epoch 12: val_loss improved from 3.12851 to 2.99408, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 2.7009 - acc: 0.7875 - val_loss: 2.9941 - val_acc: 0.6781
+Epoch 13/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.6123 - acc: 0.7785
+Epoch 13: val_loss improved from 2.99408 to 2.87676, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 2.6123 - acc: 0.7785 - val_loss: 2.8768 - val_acc: 0.6712
+Epoch 14/50
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.4580 - acc: 0.8121
+Epoch 14: val_loss improved from 2.87676 to 2.77526, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 2.4580 - acc: 0.8121 - val_loss: 2.7753 - val_acc: 0.6644
+Epoch 15/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.3737 - acc: 0.8031
+Epoch 15: val_loss improved from 2.77526 to 2.68545, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 2.3737 - acc: 0.8031 - val_loss: 2.6855 - val_acc: 0.6644
+Epoch 16/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.2587 - acc: 0.8434
+Epoch 16: val_loss improved from 2.68545 to 2.60540, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 2.2587 - acc: 0.8434 - val_loss: 2.6054 - val_acc: 0.6712
+Epoch 17/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.1766 - acc: 0.8188
+Epoch 17: val_loss improved from 2.60540 to 2.52881, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 2.1766 - acc: 0.8188 - val_loss: 2.5288 - val_acc: 0.6644
+Epoch 18/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.1071 - acc: 0.8121
+Epoch 18: val_loss improved from 2.52881 to 2.46742, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 17s 2s/step - loss: 2.1071 - acc: 0.8121 - val_loss: 2.4674 - val_acc: 0.6849
+Epoch 19/50
+
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 2.0529 - acc: 0.8300
+Epoch 19: val_loss improved from 2.46742 to 2.40664, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 21s 3s/step - loss: 2.0529 - acc: 0.8300 - val_loss: 2.4066 - val_acc: 0.6781
+Epoch 20/50
+
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.9715 - acc: 0.8412
+Epoch 20: val_loss improved from 2.40664 to 2.34816, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 17s 2s/step - loss: 1.9715 - acc: 0.8412 - val_loss: 2.3482 - val_acc: 0.6781
+Epoch 21/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.9229 - acc: 0.8300
+Epoch 21: val_loss improved from 2.34816 to 2.30459, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 1.9229 - acc: 0.8300 - val_loss: 2.3046 - val_acc: 0.6781
+Epoch 22/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.8899 - acc: 0.8277
+Epoch 22: val_loss improved from 2.30459 to 2.25316, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 17s 2s/step - loss: 1.8899 - acc: 0.8277 - val_loss: 2.2532 - val_acc: 0.6849
+Epoch 23/50
+
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.8058 - acc: 0.8591
+Epoch 23: val_loss improved from 2.25316 to 2.21878, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 1.8058 - acc: 0.8591 - val_loss: 2.2188 - val_acc: 0.6712
+Epoch 24/50
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.7977 - acc: 0.8501
+Epoch 24: val_loss improved from 2.21878 to 2.17492, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 15s 2s/step - loss: 1.7977 - acc: 0.8501 - val_loss: 2.1749 - val_acc: 0.6918
+Epoch 25/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.7477 - acc: 0.8345
+Epoch 25: val_loss improved from 2.17492 to 2.14305, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 13s 2s/step - loss: 1.7477 - acc: 0.8345 - val_loss: 2.1430 - val_acc: 0.6986
+Epoch 26/50
+
+
+
+
+
+7/7 [==============================] - ETA: 0s - loss: 1.7027 - acc: 0.8523
+Epoch 26: val_loss improved from 2.14305 to 2.11935, saving model to gs_icd_label_pretrained.h5
+7/7 [==============================] - 14s 2s/step - loss: 1.7027 - acc: 0.8523 - val_loss: 2.1193 - val_acc: 0.6849
+Epoch 27/50
+2/7 [=======>......................] - ETA: 8s - loss: 1.6693 - acc: 0.8828
+3/7 [===========>..................] - ETA: 6s - loss: 1.6601 - acc: 0.8750
+4/7 [================>.............] - ETA: 5s - loss: 1.6681 - acc: 0.8633
+5/7 [====================>.........] - ETA: 3s - loss: 1.6512 - acc: 0.8656
+6/7 [========================>.....] - ETA: 1s - loss: 1.6507 - acc: 0.8594
+7/7 [==============================] - ETA: 0s - loss: 1.6546 - acc: 0.8501
+1/7 [===>..........................] - ETA: 10s - loss: 1.6078 - acc: 0.8906
+2/7 [=======>......................] - ETA: 8s - loss: 1.5765 - acc: 0.8828
+3/7 [===========>..................] - ETA: 6s - loss: 1.6075 - acc: 0.8750
+4/7 [================>.............] - ETA: 5s - loss: 1.6448 - acc: 0.8555
+6/7 [========================>.....] - ETA: 1s - loss: 1.6094 - acc: 0.8802
+7/7 [==============================] - ETA: 0s - loss: 1.6174 - acc: 0.8658
+7/7 [==============================] - ETA: 0s - loss: 1.6174 - acc: 0.8658
+1/7 [===>..........................] - ETA: 10s - loss: 1.5724 - acc: 0.8750
+2/7 [=======>......................] - ETA: 8s - loss: 1.6089 - acc: 0.8906
+4/7 [================>.............] - ETA: 5s - loss: 1.5908 - acc: 0.8711
+5/7 [====================>.........] - ETA: 3s - loss: 1.5865 - acc: 0.8719
+6/7 [========================>.....] - ETA: 1s - loss: 1.5849 - acc: 0.8672
+7/7 [==============================] - ETA: 0s - loss: 1.6038 - acc: 0.8523
+1/7 [===>..........................] - ETA: 10s - loss: 1.5914 - acc: 0.8281
+2/7 [=======>......................] - ETA: 8s - loss: 1.5839 - acc: 0.8438
+3/7 [===========>..................] - ETA: 6s - loss: 1.5882 - acc: 0.8490
+4/7 [================>.............] - ETA: 5s - loss: 1.5771 - acc: 0.8555
+5/7 [====================>.........] - ETA: 3s - loss: 1.5630 - acc: 0.8719
+6/7 [========================>.....] - ETA: 1s - loss: 1.5528 - acc: 0.8750
+7/7 [==============================] - ETA: 0s - loss: 1.5547 - acc: 0.8725
+1/7 [===>..........................] - ETA: 11s - loss: 1.5570 - acc: 0.8281
+2/7 [=======>......................] - ETA: 8s - loss: 1.5090 - acc: 0.8750
+3/7 [===========>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+3/7 [===========>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+3/7 [===========>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+3/7 [===========>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 32/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 33/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 34/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 35/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 36/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 37/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 38/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 39/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 40/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 41/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 42/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 43/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 44/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 45/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 46/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 47/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 48/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 49/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+Epoch 50/50=====>..................] - ETA: 6s - loss: 1.4870 - acc: 0.8802
+2/5 [===========>..................] - ETA: 1s - loss: 1.4870 - acc: 0.8802
+2/5 [===========>..................] - ETA: 1s - loss: 1.4870 - acc: 0.8802
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/engine/training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/002
+Initializing embedding layer with word2vec weights, shape (2923, 300)in/002
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+1/8 [==>...........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/engine/training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 2/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 3/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 4/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 5/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 6/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 7/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 8/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 9/50.........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 10/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 11/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 12/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 13/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 14/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 15/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 16/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 17/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 18/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 19/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 20/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 21/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 22/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 23/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 24/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 25/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 26/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 27/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 28/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 29/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 30/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 31/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 32/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 33/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 34/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 35/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 36/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 37/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 38/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 39/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 40/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 41/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 42/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 43/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 44/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 45/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 46/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 47/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 48/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 49/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+Epoch 50/50........................] - ETA: 15s - loss: 7.9127 - acc: 0.0469
+4/5 [=======================>......] - ETA: 0ss - loss: 7.9127 - acc: 0.0469
+4/5 [=======================>......] - ETA: 0ss - loss: 7.9127 - acc: 0.0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/engine/training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+2/5 [===========>..................] - ETA: 1sdata/labels_subsite_train/0469
+2/5 [===========>..................] - ETA: 1sdata/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+cnn settings:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/engine/training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 2/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 3/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 4/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 5/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 6/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 7/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 8/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 9/50gs:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 10/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 11/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 12/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 13/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 14/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 15/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 16/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 17/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 18/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 19/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 20/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 21/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 22/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 23/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 24/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 25/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 26/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 27/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 28/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 29/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 30/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 31/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 32/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 33/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 34/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 35/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 36/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 37/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 38/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 39/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 40/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 41/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 42/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 43/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 44/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 45/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 46/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 47/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 48/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 49/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+Epoch 50/50s:initialized_models/basic_cnn/big_data/labels_subsite_train/0469
+FULL EXPERIMENT micro-f 0.6987951807228916big_data/labels_subsite_train/0469
+FULL EXPERIMENT micro-f 0.6987951807228916big_data/labels_subsite_train/0469
