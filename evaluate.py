@@ -45,19 +45,21 @@ reverse_seq = True
 def main(args=None):
     rand_state = np.random.RandomState(rand_seed)
     data_label_pairs = get_task_labels(task)
-    data_label_pairs = trim_cases_by_class(data_label_pairs)
-    label_list = [x[1] for x in data_label_pairs]
-    label_encoder = LabelEncoder()
-    label_encoder.fit(label_list)
+    # data_label_pairs = trim_cases_by_class(data_label_pairs)
+    # label_list = [x[1] for x in data_label_pairs]
+    # label_encoder = LabelEncoder()
+    # label_encoder.fit(label_list)
     # cv_list = balancedCV(label_list, num_cv, rand_state)
 
-    y_actual, y_pred = [], []
-    # for this_cv in range(num_cv):
-    # train_idx = [i for i, cv in enumerate(cv_list) if cv != this_cv]
-    # test_idx = [i for i, cv in enumerate(cv_list) if cv == this_cv or cv != this_cv]
+    # y_actual, y_pred = [], []
+    # # for this_cv in range(num_cv):
+    # # train_idx = [i for i, cv in enumerate(cv_list) if cv != this_cv]
+    # # test_idx = [i for i, cv in enumerate(cv_list) if cv == this_cv or cv != this_cv]
 
-    # train = [x for i, x in enumerate(data_label_pairs) if i in train_idx]
+    # # train = [x for i, x in enumerate(data_label_pairs) if i in train_idx]
     test = data_label_pairs
+    
+    # print(len(test))
 
     # train,test = balanced_split_list(data_label_pairs,label_list,test_prop)
     # train_label_list = [x[1] for x in train]
@@ -65,16 +67,19 @@ def main(args=None):
     # get train vocab, initialize train wv matrix, token to wv_idx mappings 
     # vocab_counter = get_data_token_count(test)
     
+    # with open('test_data_2.pkl', 'rb') as file:
+    #     test = pickle.load(file)
+    
     # Load wvToIdx
     with open('vocab.pkl', 'rb') as handle:
         vocab_counter = pickle.load(handle)
 
-    # wv_mat, wv_to_idx = wv_initialize(
-    #     preloadedWV, min_df, vocab_counter, rand_state
-    # )
+    wv_mat, wv_to_idx = wv_initialize(
+        preloadedWV, min_df, vocab_counter, rand_state
+    )
     
-    with open('wv_to_idx.pkl', 'rb') as handle:
-        wv_to_idx = pickle.load(handle)
+    # with open('wv_to_idx.pkl', 'rb') as handle:
+    #     wv_to_idx = pickle.load(handle)
 
     # train_tokens, train_y = list(zip(*train))
     # train_x = [
@@ -92,6 +97,8 @@ def main(args=None):
         for x in test_tokens
     ]
     # train_y = label_encoder.transform(train_y)
+    label_encoder = LabelEncoder()
+    label_encoder.fit(test_y)
     test_y = label_encoder.transform(test_y)
     # val_y = label_encoder.transform(val_y)
     # label_names = get_list_unique(test_y)
@@ -167,7 +174,7 @@ def read_json():
     """
     function to read matched_fd.json as list
     """
-    with open('raw_500_items.json') as data_file:
+    with open('raw_last_150_items.json') as data_file:
         data = json.load(data_file)
     return data
 
@@ -177,7 +184,9 @@ def get_valid_label(task_name, in_data):
     function to get text,labels for valid tasks
     """
     # print(in_data[0])
-    valid_entries = [x for x in in_data if x[task_name]["match_status"] == "matched"]
+    # valid_entries = [x for x in in_data if x[task_name]["match_status"] == "matched"]
+    
+    valid_entries = in_data
     valid_text = [x["doc_raw_text"] for x in valid_entries]
     valid_tokens = [cleanText(x) for x in valid_text]
     valid_labels = [x[task_name]["match_label"] for x in valid_entries]
